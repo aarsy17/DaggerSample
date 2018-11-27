@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation rootProject.ext.libDependencies.appCompat
+    implementation rootProject.ext.libDependencies.constraintLayout
+    implementation rootProject.ext.libDependencies.lifecycleAndroid
+    implementation rootProject.ext.libDependencies.design
+    testImplementation rootProject.ext.libDependencies.junitTest
+    androidTestImplementation rootProject.ext.libDependencies.runnerTest
+    androidTestImplementation rootProject.ext.libDependencies.espressoTest
+    implementation rootProject.ext.libDependencies.dagger
+    implementation rootProject.ext.libDependencies.daggerSupport
+    annotationProcessor rootProject.ext.libDependencies.daggerProcessor
+    annotationProcessor rootProject.ext.libDependencies.daggerProcessorSupport
+    implementation rootProject.ext.libDependencies.gson
+    implementation rootProject.ext.libDependencies.retrofit
+    implementation rootProject.ext.libDependencies.gsonConverter
+    implementation rootProject.ext.libDependencies.rxjavaAdapter
+    implementation rootProject.ext.libDependencies.okhttp
+    implementation rootProject.ext.libDependencies.loggininterceptor
+}

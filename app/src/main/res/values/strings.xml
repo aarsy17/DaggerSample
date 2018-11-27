@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DaggerSample</string>
+    <string name="title_activity_main2">Second Activity</string>
+</resources>

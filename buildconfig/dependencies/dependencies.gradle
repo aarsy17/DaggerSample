@@ -1,0 +1,31 @@
+ext {
+
+    compileSdkVersion = 28
+    minSdkVersion = 15
+    targetSdkVersion = 28
+
+
+    libDependencies = [
+            appCompat             : "com.android.support:appcompat-v7:28.0.0",
+            constraintLayout      : "com.android.support.constraint:constraint-layout:1.1.3",
+            lifecycleAndroid      : "android.arch.lifecycle:extensions:1.1.1",
+            design                : "com.android.support:design:28.0.0",
+            junitTest             : "junit:junit:4.12",
+            runnerTest            : "com.android.support.test:runner:1.0.2",
+            espressoTest          : "com.android.support.test.espresso:espresso-core:3.0.2",
+            dagger                : "com.google.dagger:dagger-android:2.15",
+            daggerSupport         : "com.google.dagger:dagger-android-support:2.15",
+            daggerProcessor       : "com.google.dagger:dagger-android-processor:2.15",
+            daggerProcessorSupport: "com.google.dagger:dagger-compiler:2.15",
+            gson                  : 'com.google.code.gson:gson:2.8.5',
+            retrofit              : 'com.squareup.retrofit2:retrofit:2.4.0',
+            gsonConverter         : 'com.squareup.retrofit2:converter-gson:2.4.0',
+            rxjavaAdapter         : 'com.squareup.retrofit2:adapter-rxjava:2.4.0',
+            okhttp                : 'com.squareup.okhttp3:okhttp:3.10.0',
+            loggininterceptor     : 'com.squareup.okhttp3:logging-interceptor:3.8.1',
+            module1               : ":module1",
+            abstraction           : ":abstraction"
+    ]
+
+
+}
